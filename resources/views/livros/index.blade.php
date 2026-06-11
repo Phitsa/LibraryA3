@@ -26,7 +26,6 @@
 
 @if($busca)
     <div class="search-info">
-        <span class="algo-tag">🔍 Busca Binária — O(log n)</span>
         @if(count($livros) > 0)
             {{ count($livros) }} resultado(s) encontrado(s) para "<strong>{{ $busca }}</strong>"
         @else
@@ -57,7 +56,7 @@
         <div class="value" style="color: #e74c3c">{{ $emprestados }}</div>
     </div>
     <div class="stat-card">
-        <div class="label">Na Fila (FIFO)</div>
+        <div class="label">Na Fila</div>
         <div class="value" style="color: var(--gold)">{{ $reservas }}</div>
     </div>
 </div>

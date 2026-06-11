@@ -28,7 +28,7 @@ class BibliotecaService
         $esquerda = 0;
         $direita = count($livros) - 1;
 
-        // Busca binária clássica por correspondência exata do início do título
+        // Busca binária por correspondência exata do início do título
         while ($esquerda <= $direita) {
             $meio = intdiv($esquerda + $direita, 2);
             $tituloMeio = strtolower($livros[$meio]['titulo']);
